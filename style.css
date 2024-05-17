@@ -1,0 +1,138 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.conatainer{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* /heaader */
+#branding h1{
+    float: left;
+    padding-left: 20px;
+    color: rgb(10, 35, 55);
+}
+header{
+    background-color: cadetblue;
+    color: aliceblue;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid; 
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    
+}
+header nav{
+    float: right;
+    margin-top: 20px;
+}
+header .highlight, header .current a{
+    color: aliceblue;
+    font-weight: bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase {
+    min-height: 400px;
+    background-image: url(images/bg-image.jpg);
+    
+}
+#showcase h1{
+    padding: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: #ccbdbd;
+}
+#showcase p{
+    color: antiquewhite;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#newsletter {
+    padding: 20px;
+    background-color: rgb(169, 179, 78);
+    font-size: 20px;
+}
+#newsletter h1{
+    float: left;
+    margin-top: 5px;
+}
+#newsletter form{
+  padding-left: 80px;
+    margin-top: 15px;
+
+}
+#newsletter input[type= 'email']{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    border-radius: 15px;
+    border: 0;
+    padding-left: 15px;
+    padding: 10;
+}
+.btn1{
+    height: 36px;
+    background: rgb(165, 224, 165);
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    padding: 10px;    
+}
+#boxes{
+    /* margin-top: 20px; */
+    min-height: 600px;
+    padding: 10px;
+    background-color: #ccbdbd;
+
+}
+#boxes .box{
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: black 2px solid;
+    padding: 1px;
+}
+#boxes .box2{
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: black 2px solid;
+    padding:2px;
+}
+
+#boxes .box, img{
+    width: 155px;   
+}
+
+#footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #e8491d;
+    background-color: aquamarine;
+    text-align: center;
+}
