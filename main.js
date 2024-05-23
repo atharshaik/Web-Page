@@ -72,3 +72,9 @@ while(i<= 10){
     console.log(`while loop no is : ${i}`);
     i++;
 }
+
+// foreach , map, filter 
+const todoText = todos.map(function(todo) {
+  return todo.text;  
+});
+console.log(todoText);
