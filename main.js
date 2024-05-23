@@ -34,4 +34,41 @@ const person = {
         pinCode : '500000',
     }
 }
+console.log(person.firstName);
+console.log(person.hobbies[1]);
 console.log(person);
+console.log(person.address.pinCode);
+
+
+// todos
+const todos = [ {
+    id: 1 ,
+    text: 'sample1',
+    isCompleted: true
+},
+{
+    id: 2,
+    text: 'sample2',
+    isCompleted: true
+},
+{
+    id: 3 ,
+    text: 'sample3',
+    isCompleted: false
+}]
+console.log(todos);
+// json 
+const todosJSON = JSON.stringify(todos);
+console.log(todosJSON);
+
+//for loop
+for (let i = 0; i<10; i++){
+    console.log(`for loop no is:  ${i}`);
+}
+
+// while loop 
+let i = 0;
+while(i<= 10){
+    console.log(`while loop no is : ${i}`);
+    i++;
+}
