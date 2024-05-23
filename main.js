@@ -21,3 +21,17 @@ x = 20; // 'x' is reassigned to a new value, but 10 itself remains unchanged
 let y = "hello";
 y = y + " world"; // creates a new string "hello world"
 console.log(y)
+
+
+const person = {
+    firstName : 'shaik',
+    lastName : 'pasha',
+    age : 22,
+    hobbies : ['Cricket', 'play online games'],
+    address : {
+        street :  'Hyderabad',
+        state : 'Telangana',
+        pinCode : '500000',
+    }
+}
+console.log(person);
