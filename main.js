@@ -88,3 +88,15 @@ const todoCompleted = todos.filter(function (todo){
     return todo.text;
 })
 console.log(todoCompleted);
+
+
+// if and else 
+const x = 20;
+if (x===20){
+    console.log('x is 10');
+}else if (x>10){
+    console.log('x is greater than 10')
+}
+else{
+    console.log('x is not 10')
+}
