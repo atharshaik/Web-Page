@@ -16,7 +16,7 @@ console.log(numbers);
 const fruits = ['apple', 'oranges'];
 
 console.log(fruits)
-x = 20; // 'x' is reassigned to a new value, but 10 itself remains unchanged
+// x = 20; // 'x' is reassigned to a new value, but 10 itself remains unchanged
 
 let y = "hello";
 y = y + " world"; // creates a new string "hello world"
@@ -100,3 +100,8 @@ if (x===20){
 else{
     console.log('x is not 10')
 }
+
+const z = 10;
+
+const color = z>10 ?    'red' : 'blue';
+console.log(color); 
