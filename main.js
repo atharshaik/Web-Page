@@ -101,7 +101,7 @@ else{
     console.log('x is not 10')
 }
 
-const z = 10;
+const z = 11;
 
 const color = z>10 ?    'red' : 'blue';
 console.log(color); 
