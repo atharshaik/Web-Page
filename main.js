@@ -105,3 +105,39 @@ const z = 11;
 
 const color = z>10 ?    'red' : 'blue';
 console.log(color); 
+
+
+// switch case 
+
+switch (color){
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is not red or blue')
+        break;
+}
+
+
+// functions method 1
+function addNums (num1 , num2){
+console.log(num1 + num2);
+}
+addNums(5 , 5);
+
+
+// functions method 2
+function addNums (num1=2, num2= 4){
+    return(num1+ num2);
+}
+console.log(addNums(5,6));
+
+
+// functions method 3
+const addNum= (num1,  num2) => {
+    console.log(num1+num2);
+}
+addNum(5,8);
