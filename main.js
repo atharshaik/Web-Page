@@ -141,3 +141,23 @@ const addNum= (num1,  num2) => {
     console.log(num1+num2);
 }
 addNum(5,8);
+
+
+// constractur function 
+function Person ( firstName, lastName, dob, city) {
+    this.firstName= firstName;
+    this.lastName = lastName;
+    this.dob = dob;
+    this.city = city;
+    this.getFullName = function() {
+        return `${this.firstName}  ${this.lastName}`;
+    }
+    // this.getFullYear = function() {
+    //     return `his.dob.getFullYear();
+    // }
+}
+const person1 = new Person('shaik', 'pasha', '14-09-2001', 'hyd');
+const person2= new Person('zs', 'sz', '13-06-2005', 'hyd');
+const person3 = new Person('doe', 'john', '14-08-2008', 'hyd');
+console.log(person1.getFullName());
+// console.log(person2.getFullYear());
