@@ -7,3 +7,5 @@ console.log(document.getElementById('header'));
 header.textcontent = 'hello world';
 // console.log(header);
 header.innertext = 'hello';
+var headerBase = document.getElementById('header');
+headerBase.style.borderBottom = 'solid #ccc 3px';
