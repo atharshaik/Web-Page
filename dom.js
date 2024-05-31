@@ -38,12 +38,33 @@
 // console.log(itemList);
 
 // firstchild
-console.log(items.firstChild);
-// firstelemntchild
-console.log(items.firstElementChild);
-items.firstElementChild.style.backgroundColor = 'red';
+// console.log(items.firstChild);
+// // firstelemntchild
+// console.log(items.firstElementChild);
+// items.firstElementChild.style.backgroundColor = 'red';
 
-console.log(items.firstChild);
-// lastelemntchild
-console.log(items.lastElementChild);
-items.lastElementChild.style.backgroundColor = 'red';
+// console.log(items.firstChild);
+// // lastelemntchild
+// console.log(items.lastElementChild);
+// items.lastElementChild.style.backgroundColor = 'red';
+
+// // nextsibling
+// console.log(items.nextSibling);
+
+var newDiv = document.createElement('newDiv');
+// add class 
+newDiv.className = 'shaik';
+// add id 
+newDiv.id = 'hello';
+// add text
+var newDivText = document.createTextNode('this is shaik');
+newDiv.appendChild(newDivText);
+
+var container = document.querySelector('header, .container');
+var h1 = document.querySelector('header, h1');
+// console.log(newDiv);
+ 
+container.insertBefore(newDiv, h1);
+newDiv.style.fontSize = '30px';
+newDiv.style.backgroundColor = 'grey';
+console.log(newDiv);
