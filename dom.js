@@ -51,25 +51,49 @@
 // // nextsibling
 // console.log(items.nextSibling);
 
-var newDiv = document.createElement('newDiv');
-// add class 
-newDiv.className = 'shaik';
-// add id 
-newDiv.id = 'hello';
-// add text
-var newDivText = document.createTextNode('this is shaik');
-newDiv.appendChild(newDivText);
+// var newDiv = document.createElement('newDiv');
+// // add class 
+// newDiv.className = 'shaik';
+// // add id 
+// newDiv.id = 'hello';
+// // add text
+// var newDivText = document.createTextNode('this is shaik');
+// newDiv.appendChild(newDivText);
 
-var container = document.querySelector('header, .container');
-var h1 = document.querySelector('header, h1');
-// console.log(newDiv);
+// var container = document.querySelector('header, .container');
+// var h1 = document.querySelector('header, h1');
+// // console.log(newDiv);
  
-container.insertBefore(newDiv, h1);
-newDiv.style.fontSize = '30px';
-newDiv.style.backgroundColor = 'grey';
-console.log(newDiv);
+// container.insertBefore(newDiv, h1);
+// newDiv.style.fontSize = '30px';
+// newDiv.style.backgroundColor = 'grey';
+// console.log(newDiv);
 
-var button = document.getElementById('btn-block').addEventListener('click' , buttonClick);
-function buttonClick(){
-    console.log('btn-block', buttonClick);
+// var button = document.getElementById('btn-block').addEventListener('click' , buttonClick);
+// function buttonClick(e){
+//     // console.log('btn-block', buttonClick);
+//     console.log(e.target);
+//     console.log(e.target.id);
+//    console.log(e.target.className);
+//    console.log(e.target.classList);
+
+//    var output = document.getElementById('output')
+//    output.innerHTML= '<h4>'+e.target.tagName+'</h4>';
+   
+// console.log(e.type);
+
+// console.log(e.clientX);
+// }
+
+var box =document.getElementById('box');
+box.addEventListener('mouseenter', runEvent);
+box.addEventListener('mouseleave', runEvent);
+box.addEventListener('mouseover', runEvent);
+box.addEventListener('mouseout', runEvent);
+box.addEventListener('mousemove', runEvent);
+function runEvent(e){
+    console.log('Event Type: ' +e.type);
+
+    output.innerHTML = '<h3> MouseX: '+e.offsetX+'</h3><h3> MouseY: '+e.offsetY+'</h3>';
+    box.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 100)";
 }
