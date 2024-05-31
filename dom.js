@@ -68,3 +68,8 @@ container.insertBefore(newDiv, h1);
 newDiv.style.fontSize = '30px';
 newDiv.style.backgroundColor = 'grey';
 console.log(newDiv);
+
+var button = document.getElementById('button').addEventListener('click' , buttonClick);
+function buttonClick(){
+    console.log('button', buttonClick);
+}
