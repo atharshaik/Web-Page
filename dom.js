@@ -69,7 +69,7 @@ newDiv.style.fontSize = '30px';
 newDiv.style.backgroundColor = 'grey';
 console.log(newDiv);
 
-var button = document.getElementById('button').addEventListener('click' , buttonClick);
+var button = document.getElementById('btn-block').addEventListener('click' , buttonClick);
 function buttonClick(){
-    console.log('button', buttonClick);
+    console.log('btn-block', buttonClick);
 }
