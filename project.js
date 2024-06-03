@@ -1,12 +1,15 @@
 var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
+var filter = document.getElementById('filter');
 
 // add del event
 itemList.addEventListener('click', removeItem);
 
-// form submitting
+// form submit event
 form.addEventListener('submit', addItem);
-
+// add filter  event
+filter.addEventListener('keyup', filterItem);
+    
 
 function addItem(e){
     e.preventDefault();
@@ -40,5 +43,21 @@ function removeItem(e){
             itemList.removeChild(li);
         }
     }
-    console.log()
+    // console.log()
+}
+
+// function of filter
+function filterItem(e){
+    // convert upper case to lower case
+    var text = e.target.value.toLowerCase();
+// get li's
+    var items = document.getElementsByTagName('li');
+
+    //convert an array 
+    Array.from(items).forEach(function(item){
+        var itemName = item.firstChild.textContent;
+        console.log(itemName)
+    });
+
+    // console.log(items);ffsfsgfs
 }
