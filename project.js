@@ -64,5 +64,4 @@ function filterItem(e){
         console.log(itemName)
     });
 
-    // console.log(items);ffsfsgfs
 }
